@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 {
     Character* character; // an instance of flappy bird
     CCPhysicsNode* physicsNode; // a node that simulate physics
+    float timeSinceObstacle;
 }
 
 -(void) initialize;
