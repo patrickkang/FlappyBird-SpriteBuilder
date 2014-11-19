@@ -6,7 +6,9 @@
 
 - (void)initialize
 {
-    // your code here
+    // Create a character and add it to the screen.
+    character = (Character*)[CCBReader load:@"Character"];
+    [physicsNode addChild:character];
 }
 
 -(void)update:(CCTime)delta
